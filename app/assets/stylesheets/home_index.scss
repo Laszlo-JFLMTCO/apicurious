@@ -1,0 +1,54 @@
+body {
+  font-family: Verdana;
+}
+
+.navbar {
+  height: 20px;
+  font-size: 9px;
+  min-height: 0;
+  margin: 0;
+  background-color: #F0F0F0;
+  color: black;
+}
+
+li.navbar {
+  font-size: 9px;
+}
+
+.reddit-logo-bar {
+  position: relative;
+  background-color: #CEE3F8;
+  height: 46px;
+}
+
+.reddit-logo-bar img {
+  position: absolute;
+  left: 0;
+  height: 40px;
+  width: 120px;
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.reddit-login {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.user-details {
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  background-color: #EFF7FF;
+  width: 150px;
+  border-top-left-radius: 5px;
+}
+
+.user-details p {
+  font-size: 9px;
+  margin-left: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
