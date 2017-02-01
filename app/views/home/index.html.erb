@@ -8,9 +8,15 @@
             MY SUBREDDITS
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <ul>
+              <% @reddit_user_content.subreddits_subscriber.keys.sort.each do |subreddit_name| %>
+                <li>
+                  <p>
+                    <a class="dropdown-item" href="#"><%= @reddit_user_content.subreddits_subscriber[subreddit_name].display_name %></a>
+                  </p>
+                </li>
+              <% end %>
+            </ul>
           </div>
         </li>
       </ul>
