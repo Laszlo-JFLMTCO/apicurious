@@ -38,11 +38,12 @@ class RedditService
   end
 
   def self.ping_reddit
-    conn = Faraday.new
-    response = conn.get 'https://oauth.reddit.com/api/v1/me/' do |req|
-      req.headers[:Authorization] = "bearer #{@token}"
-    end
-    return false unless response.status == 200
+    response = api(:me)
+    # conn = Faraday.new
+    # response = conn.get 'https://oauth.reddit.com/api/v1/me/' do |req|
+    #   req.headers[:Authorization] = "bearer #{@token}"
+    # end
+    return false if response.nil?
     true
   end
 end
