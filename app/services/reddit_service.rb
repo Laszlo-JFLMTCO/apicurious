@@ -18,19 +18,11 @@ class RedditService
   end
 
   def self.api_me(response)
-    # conn = Faraday.new
-    # response = conn.get url do |req|
-    #   req.headers[:Authorization] = "bearer #{@token}"
-    # end
     return nil unless response.status == 200
     JSON.parse(response.body)
   end
 
   def self.api_subreddits_subscriber(response)
-    # conn = Faraday.new
-    # response = conn.get url do |req|
-    #   req.headers[:Authorization] = "bearer #{@token}"
-    # end
     return nil unless response.status == 200
     subreddits = JSON.parse(response.body)["data"]["children"].inject({}) do |subreddits,child|
       subreddits[child["data"]["display_name"].upcase] = SubredditSubscriber.new(:url => child["data"]["url"],

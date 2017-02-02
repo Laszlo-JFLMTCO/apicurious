@@ -27,27 +27,4 @@ class Reddit
       :subreddits_subscriber => RedditService.api(:subreddits_subscriber)
     })
   end
-
-  # def api_me
-  #   conn = Faraday.new
-  #   response = conn.get 'https://oauth.reddit.com/api/v1/me/' do |req|
-  #     req.headers[:Authorization] = "bearer #{@token}"
-  #   end
-  #   return nil unless response.status == 200
-  #   response
-  # end
-
-  # def self.api_subreddits_subscriber
-  #   conn = Faraday.new
-  #   response = conn.get 'https://oauth.reddit.com/subreddits/mine/subscriber' do |req|
-  #     req.headers[:Authorization] = "bearer #{@token}"
-  #   end
-  #   return nil unless response.status == 200
-  #   subreddits = JSON.parse(response.body)["data"]["children"].inject({}) do |subreddits,child|
-  #     subreddits[child["data"]["display_name"].upcase] = SubredditSubscriber.new(:url => child["data"]["url"],
-  #                                                                         :display_name => child["data"]["display_name"].upcase)
-  #     subreddits
-  #   end
-  #   subreddits
-  # end
 end
