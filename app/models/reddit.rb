@@ -5,8 +5,8 @@ class Reddit
               :subreddits_subscriber
               
   def initialize(content = {})
-    @token = content[:token]
-    @name = content[:name]
+    @token = content[:token] || ""
+    @name = content[:name] || ""
     @karma_post = content[:karma_post] || "0"
     @karma_comment = content[:karma_comment] || "0"
     @subreddits_subscriber = content[:subreddits_subscriber] || {}
