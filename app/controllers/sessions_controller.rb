@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def create
     response = request.env['omniauth.auth']
-byebug
+
     user = User.find_or_create_by(reddit_id: response.uid)
 # byebug
     user.token = response.credentials.token
