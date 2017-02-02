@@ -1,8 +1,9 @@
 class SessionsController < ApplicationController
   def create
-    response = env['omniauth.auth']
+    response = request.env['omniauth.auth']
 
     user = User.find_or_create_by(reddit_id: response.uid)
+# byebug
     user.token = response.credentials.token
     if user.name.nil?
       conn = Faraday.new

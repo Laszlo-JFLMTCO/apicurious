@@ -1,0 +1,213 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://oauth.reddit.com/api/v1/me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - bearer akXwggApkId3h3r8VnAiT4ZghDM
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Www-Authenticate:
+      - Bearer realm="reddit", error="invalid_token"
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Reddit-Tracking, X-Moose
+      X-Reddit-Tracking:
+      - https://pixel.redditmedia.com/pixel/of_destiny.png?v=ZZT%2FdizjOJ0mjRuomxKVok68I5w3SgpY8SaaGQG3I1slkeSqMOwW2qY1ldEVAz9%2F50ScB5BPxNEnfH4XnHOxunBEs1rF8IEk
+      Cache-Control:
+      - max-age=0, must-revalidate
+      X-Moose:
+      - majestic
+      Content-Length:
+      - '41'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 01 Feb 2017 20:27:03 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-den6021-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1485980823.784840,VS0,VE76
+      Set-Cookie:
+      - loid=8zdbojkeAKTIm4U2H4; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      - loidcreated=1485980823000; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      Server:
+      - snooserv
+    body:
+      encoding: UTF-8
+      string: '{"message": "Unauthorized", "error": 401}'
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 20:27:03 GMT
+- request:
+    method: get
+    uri: https://oauth.reddit.com/api/v1/me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - bearer akXwggApkId3h3r8VnAiT4ZghDM
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Www-Authenticate:
+      - Bearer realm="reddit", error="invalid_token"
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Reddit-Tracking, X-Moose
+      X-Reddit-Tracking:
+      - https://pixel.redditmedia.com/pixel/of_destiny.png?v=PUhNvirdVfRRSgwDVdjSnI35G8YKWTh1yqzMFZ542nX9aJebwIF1r%2BxliowSmBuxL%2BZTqnB%2F0f%2B2dQF%2Fon5CVEES%2B7PPfch3
+      Cache-Control:
+      - max-age=0, must-revalidate
+      X-Moose:
+      - majestic
+      Content-Length:
+      - '41'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 01 Feb 2017 20:27:04 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-den6025-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1485980823.908779,VS0,VE110
+      Set-Cookie:
+      - loid=4SE4RnrglxvSzx1SZ9; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      - loidcreated=1485980823000; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      Server:
+      - snooserv
+    body:
+      encoding: UTF-8
+      string: '{"message": "Unauthorized", "error": 401}'
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 20:27:04 GMT
+- request:
+    method: get
+    uri: https://oauth.reddit.com/subreddits/mine/subscriber
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - bearer akXwggApkId3h3r8VnAiT4ZghDM
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Www-Authenticate:
+      - Bearer realm="reddit", error="invalid_token"
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Reddit-Tracking, X-Moose
+      X-Reddit-Tracking:
+      - https://pixel.redditmedia.com/pixel/of_destiny.png?v=S43lQFa%2BMimOq5kIjYtXA4UWz1skt9bcBI4eGwMJbs317WHoWL77C0kQjHIZF4cyXTyRUkUCHmkwMhwKIQIMYK%2FOcWe%2BT2aj
+      Cache-Control:
+      - max-age=0, must-revalidate
+      X-Moose:
+      - majestic
+      Content-Length:
+      - '41'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 01 Feb 2017 20:27:04 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-den6024-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1485980824.052208,VS0,VE71
+      Set-Cookie:
+      - loid=KQWQgL0CCW0gVGi0jM; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      - loidcreated=1485980824000; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      Server:
+      - snooserv
+    body:
+      encoding: UTF-8
+      string: '{"message": "Unauthorized", "error": 401}'
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 20:27:04 GMT
+recorded_with: VCR 3.0.3
